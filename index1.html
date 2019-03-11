@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text">
+<button onclick="VnSub()">dịch</button>
+<p id="result"/>
+<script>
+    function VnSub() {
+        let tienganh = ["hello", "goodbye", "green", "red"];
+        let tiengviet = ["xin chào", "tạm biệt", "màu xanh lá", "màu đỏ"];
+        let x = document.getElementById("text").value;
+        let y = null;
+        for (let i = 0; i < tiengviet.length; i++) {
+            if (x === tienganh[i]) {
+                y = tiengviet[i];
+            }
+            document.getElementById("result").innerHTML = y;
+
+        }
+
+    }
+</script>
+</body>
+</html>
